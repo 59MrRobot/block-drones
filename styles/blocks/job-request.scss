@@ -2,10 +2,12 @@
   width: 100vw;
   height: 100vh;
 
-  background-image: url("../images/job-request-background.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  &-body {
+    background-image: url("../images/job-request-background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   &__wrapper {
     padding: 48px 0;
