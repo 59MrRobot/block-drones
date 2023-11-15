@@ -1,0 +1,38 @@
+.nav {
+  padding: 24px 88px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #0004;
+
+  &--main {
+    background-color: #00000079;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    width: 30%;
+
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+  }
+
+  &__link {
+    font-weight: 600;
+    color: #fff;
+
+    transition: all 0.3s ease-in-out;
+
+    &--dark {
+      color: #fff;
+    }
+
+    &:hover {
+      color: $orange-accent;
+    }
+  }
+}

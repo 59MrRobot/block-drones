@@ -1,0 +1,31 @@
+.header {
+  height: 100vh;
+
+  background-image: url("../images/header/header.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__content {
+    height: calc(100% - 82px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    background-color: #00000079;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 3rem;
+
+    font-family: "Exo", sans-serif;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+  }
+}
