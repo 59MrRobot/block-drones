@@ -1,0 +1,21 @@
+.browse-page {
+  padding: 16px 0;
+  min-height: 100vh;
+
+  background-color: #0004;
+
+  &-body {
+    background-image: url("../images/browse-page-background.webp");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__wrapper {
+    @include limitContentWidth;
+
+    padding: 16px 0 32px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+}

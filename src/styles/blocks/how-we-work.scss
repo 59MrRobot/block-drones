@@ -1,0 +1,58 @@
+.how-it-works {
+  padding: 88px 0 0;
+
+  &__wrapper {
+    @include limitContentWidth;
+  }
+
+  &__container {
+    margin-top: 64px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 24px;
+    width: 100%;
+    height: 300px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      content: "";
+
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+      border-left: 3px solid $slate-grey;
+      border-top: 3px solid $slate-grey;
+      border-top-left-radius: 8px;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 0;
+      border-right: 3px solid $slate-grey;
+      border-bottom: 3px solid $slate-grey;
+      border-bottom-right-radius: 8px;
+    }
+
+    &-title {
+      color: $orange-accent;
+
+      font-size: 1.25rem;
+    }
+  }
+}
