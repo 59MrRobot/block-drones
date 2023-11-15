@@ -6,6 +6,8 @@
   border-radius: 4px;
 
   overflow-y: scroll;
+  scrollbar-color: $sky-color $slate-grey-low-opacity;
+  scrollbar-width: thin;
 
   &__wrapper {
     display: flex;
