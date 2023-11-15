@@ -304,7 +304,7 @@ a {
   background-color: rgba(0, 0, 0, 0.2666666667);
 }
 .browse-page-body {
-  background-image: url("/images/browse-page-background.webp");
+  background-image: url("../images/browse-page-background.webp");
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
