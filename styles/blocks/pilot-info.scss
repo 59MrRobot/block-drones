@@ -4,6 +4,10 @@
   border-radius: 8px;
   background-color: #fff;
 
+  @include mobile {
+    padding: 8px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -70,9 +74,9 @@
     border-top: 1px solid $slate-grey-light;
 
     @include mobile {
-      gap: 24px;
+      gap: 16px;
 
-      font-size: 0.9rem;
+      font-size: 0.75rem;
     }
 
     &-item {

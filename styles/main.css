@@ -670,6 +670,11 @@ a {
   border-radius: 8px;
   background-color: #fff;
 }
+@media (max-width: 600px) {
+  .pilot-info {
+    padding: 8px;
+  }
+}
 .pilot-info__top {
   display: flex;
   justify-content: space-between;
@@ -724,8 +729,8 @@ a {
 }
 @media (max-width: 600px) {
   .pilot-info__bottom {
-    gap: 24px;
-    font-size: 0.9rem;
+    gap: 16px;
+    font-size: 0.75rem;
   }
 }
 .pilot-info__bottom-item {
