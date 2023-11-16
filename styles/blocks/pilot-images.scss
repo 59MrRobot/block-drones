@@ -14,10 +14,19 @@
     height: 50vh;
   }
 
+  @include tablet {
+    padding: 8px;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
+
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
   }
 
   &__image {

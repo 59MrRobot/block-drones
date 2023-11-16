@@ -1,11 +1,19 @@
 .how-it-works {
   padding: 88px 0 0;
 
+  @include mobile {
+    padding: 72px 0 0;
+  }
+
   &__wrapper {
     @include limitContentWidth;
 
     @include tablet {
       padding: 0 40px;
+    }
+
+    @include mobile {
+      padding: 0 24px;
     }
   }
 
@@ -15,6 +23,13 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
+
+    @include mobile {
+      margin-top: 32px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 32px;
+    }
   }
 
   &__item {
@@ -32,6 +47,10 @@
 
     @include tablet {
       font-size: 0.9rem;
+    }
+
+    @include mobile {
+      height: 250px;
     }
 
     &::before,

@@ -26,5 +26,9 @@
     @include tablet {
       width: 75%;
     }
+
+    @include tablet {
+      width: 95%;
+    }
   }
 }

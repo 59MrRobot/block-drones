@@ -13,6 +13,10 @@
     height: 80vh;
   }
 
+  @include tablet {
+    height: 70vh;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;

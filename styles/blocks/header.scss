@@ -10,6 +10,10 @@
     height: 50vh;
   }
 
+  @include mobile {
+    height: 75vh;
+  }
+
   &__content {
     height: calc(100% - 82px);
 
@@ -22,8 +26,14 @@
     background-color: #00000079;
     color: #fff;
 
+    text-align: center;
+
     @include tablet {
       height: calc(100% - 61px);
+    }
+
+    @include mobile {
+      height: calc(100% - 53px);
     }
   }
 
@@ -31,9 +41,17 @@
     font-size: 3rem;
 
     font-family: "Exo", sans-serif;
+
+    @include mobile {
+      font-size: 2.5rem;
+    }
   }
 
   &__subtitle {
     font-size: 2rem;
+
+    @include mobile {
+      font-size: 1.5rem;
+    }
   }
 }

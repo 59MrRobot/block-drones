@@ -21,6 +21,11 @@
     height: 72px;
 
     border-radius: 50%;
+
+    @include mobile {
+      width: 48px;
+      height: 48px;
+    }
   }
 
   &__name {
@@ -64,6 +69,12 @@
 
     border-top: 1px solid $slate-grey-light;
 
+    @include mobile {
+      gap: 24px;
+
+      font-size: 0.9rem;
+    }
+
     &-item {
       display: flex;
       align-items: center;
@@ -76,6 +87,11 @@
     &-icon {
       width: 40px;
       height: 40px;
+
+      @include mobile {
+        width: 32px;
+        height: 32px;
+      }
     }
 
     &-title {

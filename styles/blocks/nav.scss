@@ -11,6 +11,10 @@
     padding: 16px 48px;
   }
 
+  @include mobile {
+    padding: 16px 8px;
+  }
+
   &--main {
     background-color: #00000079;
   }
@@ -26,6 +30,13 @@
 
     @include tablet {
       width: 40%;
+    }
+
+    @include mobile {
+      width: 45%;
+      gap: 8px;
+
+      font-size: 0.68rem;
     }
   }
 
