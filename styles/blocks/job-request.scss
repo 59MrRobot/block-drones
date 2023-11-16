@@ -2,8 +2,12 @@
   width: 100vw;
   height: 100vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &-body {
-    background-image: url("../images/job-request-background.webp");
+    background-image: url("../images/backgrounds/job-request-background.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,6 +38,18 @@
     overflow-y: scroll;
     scrollbar-color: $sky-color $orange-accent;
     scrollbar-width: thin;
+
+    @include tablet {
+      padding: 32px;
+      width: 75%;
+      height: 60%;
+    }
+
+    @include mobile {
+      padding: 16px;
+      width: 95%;
+      // height: 60%;
+    }
   }
 
   &__controls {
