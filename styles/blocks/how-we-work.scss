@@ -3,6 +3,10 @@
 
   &__wrapper {
     @include limitContentWidth;
+
+    @include tablet {
+      padding: 0 40px;
+    }
   }
 
   &__container {
@@ -23,6 +27,12 @@
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+
+    text-align: center;
+
+    @include tablet {
+      font-size: 0.9rem;
+    }
 
     &::before,
     &::after {
@@ -49,10 +59,21 @@
       border-bottom-right-radius: 8px;
     }
 
+    &-image {
+      @include tablet {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
     &-title {
       color: $orange-accent;
 
       font-size: 1.25rem;
+
+      @include tablet {
+        font-size: 1.15rem;
+      }
     }
   }
 }

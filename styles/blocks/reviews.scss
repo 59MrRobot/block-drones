@@ -26,10 +26,19 @@
 
     &:first-of-type {
       left: 16px;
+
+      
+      @include tablet {
+        left: 40px;
+      }
     }
 
     &:last-of-type {
       right: 16px;
+
+      @include tablet {
+        right: 40px;
+      }
     }
   }
 

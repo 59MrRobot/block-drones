@@ -9,3 +9,9 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}

@@ -12,11 +12,10 @@
 
     display: flex;
     justify-content: space-between;
-  }
 
-  &__logo {
-    display: inline-block;
-    padding-top: 40px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__copyright {
@@ -26,10 +25,30 @@
 
   &__item {
     padding: 40px 0 32px 16px;
-    flex: 0 0 300px;
+    flex: 0 0 25%;
 
     border-left: 1px solid #fff;
     color: $steel-grey;
+
+    &:first-of-type {
+      border-left: none;
+    }
+
+    @include tablet {
+      padding: 24px 0 16px 8px;
+      flex: 0 0 50%;
+
+      border-top: 1px solid #fff;
+
+      &:first-of-type,
+      &:nth-of-type(2) {
+        border-top: none;
+      }
+
+      &:nth-of-type(3) {
+        border-left: none;
+      }
+    }
 
     &--dark {
       color: #fff;

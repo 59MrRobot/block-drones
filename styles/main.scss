@@ -45,6 +45,11 @@ body {
   letter-spacing: 4px;
   color: #000;
 
+  
+  @include tablet {
+    font-size: 1.5rem;
+  }
+
   &--dark {
     color: #fff;
   }
