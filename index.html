@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,12 @@
     >
     <link rel="stylesheet" href="./styles/main.css">
   </head>
+
   <body id="page-top">
     <header class="header header--main">
       <nav class="nav nav--main">
         <div>
-          <a href="./index.html" class="logo logo--dark">Block Drones</a>
+          <a href="./index.html" class="logo">Block Drones</a>
         </div>
 
         <ul class="nav__list">
@@ -26,13 +27,55 @@
           <li class="nav__item">
             <a href="./pages/browse-pilots.html" class="nav__link">Browse Pilots</a>
           </li>
+
+          <li class="nav__item">
+            <a href="./pages/job-review.html" class="nav__link">Review Job</a>
+          </li>
         </ul>
+
+        <img
+          src="./images/menu.webp"
+          alt="menu icon"
+          class="nav__menu"
+          id="menu-toggle-open"
+        >
       </nav>
 
       <div class="header__content">
         <h1 class="header__title">Welcome to Block Drones</h1>
 
         <p class="header__subtitle">Taking Your Vision to New Heights!</p>
+      </div>
+
+      <div class="menu" id="menu">
+        <nav class="nav nav--menu">
+          <div>
+            <a href="./index.html" class="logo">Block Drones</a>
+          </div>
+  
+          <img
+            src="./images/close-white.webp"
+            alt="menu icon"
+            class="nav__menu"
+            id="menu-toggle-close"
+          >
+        </nav>
+
+        <div class="menu__content">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#how-it-works" class="menu__link">How We Work</a>
+            </li>
+  
+            <li class="menu__item">
+              <a href="./pages/browse-pilots.html" class="menu__link">Browse Pilots</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="./pages/job-review.html" class="menu__link">Review Job</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
