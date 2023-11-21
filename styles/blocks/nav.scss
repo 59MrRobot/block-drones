@@ -19,10 +19,14 @@
     background-color: #00000079;
   }
 
+  &--menu {
+    background-color: transparent;
+  }
+
   &__list {
     list-style: none;
     padding: 0;
-    width: 30%;
+    width: 40%;
 
     display: flex;
     justify-content: end;
@@ -33,6 +37,7 @@
     }
 
     @include mobile {
+      display: none;
       width: 45%;
       gap: 8px;
 
@@ -52,6 +57,18 @@
 
     &:hover {
       color: $orange-accent;
+    }
+  }
+
+  &__menu {
+    display: none;
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+
+    @include mobile {
+      display: unset;
     }
   }
 }
