@@ -1,11 +1,11 @@
 .footer {
-  background-color: $slate-grey-low-opacity;
+  background-color: $graphite-grey-low-opacity;
 
-  &--dark {
-    background-color: $graphite-grey-low-opacity;
+  // &--dark {
+  //   background-color: $graphite-grey-low-opacity;
 
-    color: #fff;
-  }
+  //   color: #fff;
+  // }
 
   &__wrapper {
     @include limitContentWidth;
@@ -32,7 +32,7 @@
     flex: 0 0 25%;
 
     border-left: 1px solid #fff;
-    color: $steel-grey;
+    color: #fff;
 
     &:first-of-type {
       border-left: none;
@@ -54,20 +54,13 @@
       }
     }
 
-    &--dark {
-      color: #fff;
-    }
-
     &-title {
       margin-bottom: 16px;
       color: $graphite-grey;
+      color: #fff;
 
       @include mobile {
         margin-bottom: 8px;
-      }
-
-      &--dark {
-        color: #fff;
       }
     }
   }
