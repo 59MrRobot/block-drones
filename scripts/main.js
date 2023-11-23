@@ -59,3 +59,41 @@ for (let i = 0; i < MENULINKS.length; i++) {
     HTML.style.overflowY = 'scroll';
   })
 }
+
+const TAB1 = document.getElementById('tab-1');
+const TAB2 = document.getElementById('tab-2');
+const TAB3 = document.getElementById('tab-3');
+const IMAGE1 = document.getElementById('image-1');
+const IMAGE2 = document.getElementById('image-2');
+const IMAGE3 = document.getElementById('image-3');
+
+TAB1.addEventListener('click', () => {
+  TAB1.classList.add('tabs__item--active');
+  TAB2.classList.remove('tabs__item--active');
+  TAB3.classList.remove('tabs__item--active');
+
+  IMAGE1.classList.add('slider__image--active');
+  IMAGE2.classList.remove('slider__image--active');
+  IMAGE3.classList.remove('slider__image--active');
+});
+
+TAB2.addEventListener('click', () => {
+  TAB1.classList.remove('tabs__item--active');
+  TAB2.classList.add('tabs__item--active');
+  TAB3.classList.remove('tabs__item--active');
+
+  IMAGE1.classList.remove('slider__image--active');
+  IMAGE2.classList.add('slider__image--active');
+  IMAGE3.classList.remove('slider__image--active');
+});
+
+TAB3.addEventListener('click', () => {
+  TAB1.classList.remove('tabs__item--active');
+  TAB2.classList.remove('tabs__item--active');
+  TAB3.classList.add('tabs__item--active');
+
+  IMAGE1.classList.remove('slider__image--active');
+  IMAGE2.classList.remove('slider__image--active');
+  IMAGE3.classList.add('slider__image--active');
+});
+
