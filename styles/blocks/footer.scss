@@ -1,12 +1,6 @@
 .footer {
   background-color: $graphite-grey-low-opacity;
 
-  // &--dark {
-  //   background-color: $graphite-grey-low-opacity;
-
-  //   color: #fff;
-  // }
-
   &__wrapper {
     @include limitContentWidth;
 
