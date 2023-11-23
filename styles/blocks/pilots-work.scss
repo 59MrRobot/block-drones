@@ -50,7 +50,7 @@
       height: 200px;
     }
 
-    &:first-of-type(1) {
+    &:first-of-type {
       top: -25%;
 
       @include mobile {
