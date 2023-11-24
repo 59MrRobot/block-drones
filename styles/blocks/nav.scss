@@ -1,5 +1,6 @@
 .nav {
   padding: 24px 88px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -8,7 +9,7 @@
   background-color: #0004;
 
   @include tablet {
-    padding: 16px 48px;
+    padding: 16px 16px;
   }
 
   @include mobile {
@@ -29,7 +30,7 @@
     width: 40%;
 
     display: flex;
-    justify-content: end;
+    justify-content: start;
     gap: 16px;
 
     @include tablet {
@@ -50,6 +51,10 @@
     color: #fff;
 
     transition: all 0.3s ease-in-out;
+
+    @include tablet {
+      font-size: 0.85rem;
+    }
 
     &--dark {
       color: #fff;
