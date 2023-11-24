@@ -105,6 +105,7 @@ const SIGNUP = document.getElementById('signup-button');
 const SIGN_OUT_MENU = document.getElementById('sign-out-menu');
 const LOGIN_MENU = document.getElementById('login-button-menu');
 const SIGNUP_MENU = document.getElementById('signup-button-menu');
+const WELCOME = document.getElementById('welcome');
 
 const signout = () => {
   sessionStorage.removeItem('user-creds');
@@ -129,6 +130,8 @@ if (!sessionStorage.getItem('user-creds')) {
   SIGN_OUT_MENU.style.display = 'none';
   LOGIN_MENU.style.display = 'unset';
   SIGNUP_MENU.style.display = 'unset';
+
+  WELCOME.style.display = 'none';
 } else {
   SIGN_OUT.style.display = 'unset';
   LOGIN.style.display = 'none';
@@ -137,5 +140,8 @@ if (!sessionStorage.getItem('user-creds')) {
   SIGN_OUT_MENU.style.display = 'unset';
   LOGIN_MENU.style.display = 'none';
   SIGNUP_MENU.style.display = 'none';
+
+  WELCOME.style.display = 'unset';
+  WELCOME.innerText = `Welcome, ${userInfo.firstName}`;
 }
 

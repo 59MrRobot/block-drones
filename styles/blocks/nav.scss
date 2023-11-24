@@ -9,7 +9,7 @@
   background-color: #0004;
 
   @include tablet {
-    padding: 16px 48px;
+    padding: 16px 16px;
   }
 
   @include mobile {
@@ -51,6 +51,10 @@
     color: #fff;
 
     transition: all 0.3s ease-in-out;
+
+    @include tablet {
+      font-size: 0.85rem;
+    }
 
     &--dark {
       color: #fff;
