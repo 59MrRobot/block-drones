@@ -33,6 +33,10 @@
 //Job Review Page
 @import "./blocks/job-review.scss";
 
+//Login and Signup pages
+@import "./blocks/login.scss";
+@import "./blocks/signup.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -140,6 +144,10 @@ body {
 
   &:hover {
     background-color: $orange-accent;
+    color: #fff;
+  }
+
+  &--white {
     color: #fff;
   }
 

@@ -1,5 +1,6 @@
 .nav {
   padding: 24px 88px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -29,7 +30,7 @@
     width: 40%;
 
     display: flex;
-    justify-content: end;
+    justify-content: start;
     gap: 16px;
 
     @include tablet {

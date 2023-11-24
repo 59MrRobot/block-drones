@@ -26,6 +26,10 @@
     gap: 24px;
   }
 
+  &__item {
+    cursor: pointer;
+  }
+
   &__link {
     font-weight: 600;
     color: #fff;

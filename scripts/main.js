@@ -97,3 +97,45 @@ TAB3.addEventListener('click', () => {
   IMAGE3.classList.add('slider__image--active');
 });
 
+let userCreds = JSON.parse(sessionStorage.getItem('user-creds'));
+let userInfo = JSON.parse(sessionStorage.getItem('user-info'));
+const SIGN_OUT = document.getElementById('sign-out');
+const LOGIN = document.getElementById('login-button');
+const SIGNUP = document.getElementById('signup-button');
+const SIGN_OUT_MENU = document.getElementById('sign-out-menu');
+const LOGIN_MENU = document.getElementById('login-button-menu');
+const SIGNUP_MENU = document.getElementById('signup-button-menu');
+
+const signout = () => {
+  sessionStorage.removeItem('user-creds');
+  sessionStorage.removeItem('user-info');
+  window.location.href = 'index.html';
+}
+
+const checkCredentials = () => {
+  if (!sessionStorage.getItem('user-creds')) {
+    window.location.href = 'index.html';
+  }
+}
+
+SIGN_OUT.addEventListener('click', signout);
+SIGN_OUT_MENU.addEventListener('click', signout);
+
+if (!sessionStorage.getItem('user-creds')) {
+  SIGN_OUT.style.display = 'none';
+  LOGIN.style.display = 'unset';
+  SIGNUP.style.display = 'unset';
+
+  SIGN_OUT_MENU.style.display = 'none';
+  LOGIN_MENU.style.display = 'unset';
+  SIGNUP_MENU.style.display = 'unset';
+} else {
+  SIGN_OUT.style.display = 'unset';
+  LOGIN.style.display = 'none';
+  SIGNUP.style.display = 'none';
+
+  SIGN_OUT_MENU.style.display = 'unset';
+  LOGIN_MENU.style.display = 'none';
+  SIGNUP_MENU.style.display = 'none';
+}
+
