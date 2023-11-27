@@ -54,7 +54,7 @@ const register = async (event) => {{
       type: type.value,
     });
 
-    window.location.href = '../dashboard.html';
+    window.location.href = '../../index.html';
   } catch (error) {
     const errorCode = error.code;
     const errorMessage = error.message;
