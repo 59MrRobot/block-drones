@@ -37,6 +37,11 @@
 @import "./blocks/login.scss";
 @import "./blocks/signup.scss";
 
+//Dashboard page
+@import "./blocks/dashboard.scss";
+@import "./blocks/job.scss";
+
+
 * {
   box-sizing: border-box;
 }
@@ -55,6 +60,7 @@ body {
   font-weight: 600;
   letter-spacing: 4px;
   color: #fff;
+  width: max-content;
 
   
   @include tablet {
@@ -65,8 +71,8 @@ body {
     font-size: 1.15rem;
   }
 
-  &--dark {
-    color: #fff;
+  &--light {
+    color: #000;
   }
 }
 
