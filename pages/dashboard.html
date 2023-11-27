@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Block Drones</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/x-icon"
+    >
+    <link rel="stylesheet" href="../styles/main.css">
+  </head>
+
+  <body class="dashboard-body">
+    <nav class="nav nav--light">
+      <div>
+        <a href="../index.html" class="logo logo--light">Block Drones</a>
+      </div>
+
+      <div class="dashboard__section">
+        <ul class="nav__list dashboard__list">
+          <li class="nav__item">
+            <a href="./pages/browse-pilots.html" class="nav__link nav__link--light">Browse Pilots</a>
+          </li>
+  
+          <li class="nav__item">
+            <a href="./pages/job-review.html" class="nav__link nav__link--light">Review Job</a>
+          </li>
+        </ul>
+
+        <p class="dashboard__welcome" id="welcome"></p>
+  
+        <button class="button dashboard__button dashboard__button--signout" id="sign-out">Sign Out</button>
+
+        <img
+          src="../images/menu-black.webp"
+          alt="menu icon"
+          id="menu-toggle-open"
+          class="nav__menu"
+        >
+      </div>
+
+      <div class="menu" id="menu">
+        <nav class="nav nav--menu">
+          <div>
+            <a href="./index.html" class="logo">Block Drones</a>
+          </div>
+  
+          <img
+            src="../images/close-white.webp"
+            alt="menu icon"
+            class="nav__menu"
+            id="menu-toggle-close"
+          >
+        </nav>
+
+        <div class="menu__content">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./browse-pilots.html" class="menu__link">Browse Pilots</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="./job-review.html" class="menu__link">Review Job</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="./accounts/login.html" class="menu__link" id="login-button-menu">Login</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="./accounts/signup.html" class="menu__link" id="signup-button-menu">Sign Up</a>
+            </li>
+
+            <li class="menu__item">
+              <p class="menu__link" id="sign-out-menu">Sign Out</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="dashboard">
+      <div class="dashboard__wrapper">
+        <div class="dashboard__container">
+          <div class="dashboard__controls">
+            <h2 class="dashboard__title">My Jobs <span class="italic">(2)</span></h2>
+
+            <a href="./browse-pilots.html" class="button dashboard__button">Browse Pilots</a>
+          </div>
+
+          <ul class="dashboard__job-list">
+            <li class="dashboard__item">
+              <div class="job">
+                <div class="job__controls">
+                  <p>
+                    <img
+                      src="../images/dashboard/pilot.webp"
+                      alt=""
+                      class="job__icon job__icon--small"
+                    >
+                    <span class="bold">Pilot:</span> Pilot 3
+                  </p>
+
+                  <p class="job__number">#132651461</p>
+                </div>
+
+                <p>
+                  <img
+                    src="../images/dashboard/description.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Description:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque alias eius cupiditate asperiores tempora molestiae totam enim numquam quas! Ex expedita suscipit et dolor molestias vel dolorem optio quam saepe!
+                </p>
+
+                <p>
+                  <img
+                    src="../images/dashboard/status.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Status:</span> Complete
+                </p>
+
+                <p>
+                  <img
+                    src="../images/dashboard/duration.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Hours Worked:</span> 3 hours
+                </p>
+
+                <p>
+                  <img
+                    src="../images/dashboard/rand.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Total Cost:</span> R3000.00
+                </p>
+              </div>
+            </li>
+
+            <li class="dashboard__item">
+              <div class="job">
+                <div class="job__controls">
+                  <p>
+                    <img
+                      src="../images/dashboard/pilot.webp"
+                      alt=""
+                      class="job__icon job__icon--small"
+                    >
+                    <span class="bold">Pilot:</span> Pilot 1
+                  </p>
+
+                  <p class="job__number">#15233631</p>
+                </div>
+
+                <p>
+                  <img
+                    src="../images/dashboard/description.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Description:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque alias eius cupiditate asperiores tempora molestiae totam enim numquam quas! Ex expedita suscipit et dolor molestias vel dolorem optio quam saepe!
+                </p>
+
+                <p>
+                  <img
+                    src="../images/dashboard/status.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Status:</span> Complete
+                </p>
+
+                <p>
+                  <img
+                    src="../images/dashboard/duration.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Hours Worked:</span> 2.5 hours
+                </p>
+
+                <p>
+                  <img
+                    src="../images/dashboard/rand.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Total Cost:</span> R2500.00
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__item">
+          <a href="../index.html" class="logo logo--dark footer__logo" >Block Drones</a>
+
+          <p class="footer__copyright">©2023 Block Drones, All rights reserved. </p>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title footer__item-title--dark">Socials</h3>
+
+          <div class="footer__socials">
+            <a href="../index.html">
+              <img
+                src="../images/footer/linkedin-white.webp"
+                alt="linkedin icon"
+                class="footer__socials-icon"
+              >
+            </a>
+            <a href="../index.html">
+              <img
+                src="../images/footer/instagram-white.webp"
+                alt="instagram icon"
+                class="footer__socials-icon"
+              >
+            </a>
+            <a href="../index.html">
+              <img
+                src="../images/footer/pinterest-white.webp"
+                alt="pinterest icon"
+                class="footer__socials-icon"
+              >
+            </a>
+            <a href="../index.html">
+              <img
+                src="../images/footer/facebook-white.webp"
+                alt="facebook icon"
+                class="footer__socials-icon"
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title">Our Services</h3>
+
+          <ul class="footer__list">
+            <li>Aerial Photography and Videography</li>
+            <li>Filmmaking and Cinematography</li>
+            <li>Event Coverage</li>
+            <li>Real Estate Marketing</li>
+            <li>Custom Services</li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title">About Us</h3>
+
+          <p>
+            We're your trusted source for connecting with skilled drone pilots. Our mission is to make aerial services accessible, convenient, and reliable. Explore our network of expert aviators and elevate your projects with confidence.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../scripts/dashboard.js"></script>
+  </body>
+</html>

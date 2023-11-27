@@ -1,0 +1,106 @@
+.dashboard {
+  height: 100%;
+
+  background-color: $slate-grey-light;
+
+  &-body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 8px;
+    width: 75%;
+
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &__list {
+    width: max-content;
+    margin: 0 16px 0 0;
+  }
+
+  &__welcome {
+    font-size: 0.8rem;
+  }
+
+  &__button {
+    padding: 8px 16px;
+
+    @include tablet {
+      padding: 8px;
+      font-size: 0.8rem;
+
+      width: 100%;
+    }
+
+    &--signout {
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__wrapper {
+    @include limitContentWidth;
+
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+
+    @include tablet {
+      padding: 0;
+
+      align-items: center;
+    }
+  }
+
+  &__container {
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+
+    overflow-y: scroll;
+    scrollbar-color: $sky-color $slate-grey-low-opacity;
+    scrollbar-width: thin;
+
+    @include tablet {
+      width: 80%;
+      height: 75%;
+    }
+  }
+
+  &__controls {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid $graphite-grey;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  &__job-list {
+    padding: 0;
+    margin-top: 32px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+    list-style: none;
+  }
+}

@@ -16,6 +16,10 @@
     padding: 16px 8px;
   }
 
+  &--light {
+    background-color: #fff;
+  }
+
   &--main {
     background-color: #00000079;
   }
@@ -56,8 +60,8 @@
       font-size: 0.85rem;
     }
 
-    &--dark {
-      color: #fff;
+    &--light {
+      color: #000;
     }
 
     &:hover {

@@ -70,14 +70,8 @@
     @include tablet {
       padding: 8px;
       font-size: 0.8rem;
-    }
-  }
 
-  &__welcome {
-    color: #fff;
-
-    @include tablet {
-      font-size: 0.8rem;
+      width: 100%;
     }
   }
 }

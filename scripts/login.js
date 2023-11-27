@@ -43,7 +43,8 @@ const login = (event) => {{
             type: snapshot.val().type
           }));
           sessionStorage.setItem('user-creds', JSON.stringify(credentials.user));
-          window.location.href = '../../index.html';
+          sessionStorage.setItem('signedIn','true');
+          window.location.href = '../dashboard.html';
         } else {
           console.log('No data available');
         }
