@@ -105,9 +105,10 @@ const SIGNUP = document.getElementById('signup-button');
 const LOGIN_MENU = document.getElementById('login-button-menu');
 const SIGNUP_MENU = document.getElementById('signup-button-menu');
 const PROFILE_MENU = document.getElementById('profile-menu');
+const DROPDOWN = document.getElementById('dropdown');
 
 if (sessionStorage.getItem('signedIn') === 'false') {
-  PROFILE.style.display = 'none';
+  DROPDOWN.style.display = 'none';
   LOGIN.style.display = 'unset';
   SIGNUP.style.display = 'unset';
 
@@ -115,7 +116,7 @@ if (sessionStorage.getItem('signedIn') === 'false') {
   LOGIN_MENU.style.display = 'unset';
   SIGNUP_MENU.style.display = 'unset';
 } else {
-  PROFILE.style.display = 'unset';
+  DROPDOWN.style.display = 'unset';
   LOGIN.style.display = 'none';
   SIGNUP.style.display = 'none';
 
@@ -123,4 +124,15 @@ if (sessionStorage.getItem('signedIn') === 'false') {
   LOGIN_MENU.style.display = 'none';
   SIGNUP_MENU.style.display = 'none';
 }
+
+const SIGN_OUT = document.getElementById('sign-out');
+
+const signout = () => {
+  sessionStorage.removeItem('user-creds');
+  sessionStorage.removeItem('user-info');
+  sessionStorage.setItem('signedIn','false');
+  window.location.href = '../index.html';
+}
+
+SIGN_OUT.addEventListener('click', signout);
 

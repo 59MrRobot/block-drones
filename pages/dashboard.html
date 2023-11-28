@@ -31,10 +31,63 @@
 
         <p class="dashboard__welcome" id="welcome"></p>
   
-        <button class="button dashboard__button dashboard__button--signout" id="sign-out">Sign Out</button>
+        <!-- <button class="button dashboard__button dashboard__button--signout" id="sign-out">Sign Out</button> -->
+        <div class="dropdown" id="dropdown">
+          <div class="dropdown__background" id="dropdown-background"></div>
+
+          <img src="../images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button">
+
+          <div class="dropdown__content" id="dropdown-content">
+            <div class="dropdown__content-top">
+              <img
+                src="../images/no-icon.webp"
+                alt="icon"
+                class="image dropdown__image"
+              >
+
+              <p>Admin A.</p>
+            </div>
+
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <div>
+                  <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <p class="dropdown__link">Account Settings</p>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <p class="dropdown__link">Favourite Pilots</p>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <p class="dropdown__link">Blocked Pilots</p>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <p class="dropdown__link">Features</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="dropdown__content-bottom">
+              <button class="dropdown__button" id="sign-out">Sign Out</button>
+            </div>
+          </div>
+        </div>
 
         <img
-          src="../images/menu-black.webp"
+          src="../images/icons/menu-black.webp"
           alt="menu icon"
           id="menu-toggle-open"
           class="nav__menu"
@@ -48,7 +101,7 @@
           </div>
   
           <img
-            src="../images/close-white.webp"
+            src="../images/icons/close-white.webp"
             alt="menu icon"
             class="nav__menu"
             id="menu-toggle-close"
@@ -83,11 +136,75 @@
 
     <main class="dashboard">
       <div class="dashboard__wrapper">
+        <div class="dashboard__user-info">
+          <div class="dashboard__user-top">
+            <img
+              src="../images/pilot-1/icon.webp"
+              alt="user image"
+              class="dashboard__user-image"
+            >
+
+            <p id="user-name">Admin. A</p>
+          </div>
+
+          <div class="dashboard__user-bottom">
+            <div class="dashboard__user-item">
+              <img
+                src="../images/icons/rating.webp"
+                alt="rating icon"
+                class="dashboard__user-icon"
+              >
+
+              <p class="dashboard__user-text">
+                <span class="bold">Rating</span>
+                0
+              </p>
+            </div>
+
+            <div class="dashboard__user-item">
+              <img
+                src="../images/icons/count.webp"
+                alt="jobs icon"
+                class="dashboard__user-icon"
+              >
+
+              <p class="dashboard__user-text">
+                <span class="bold">Jobs</span>
+                0
+              </p>
+            </div>
+
+            <div class="dashboard__user-item">
+              <img
+                src="../images/icons/person.webp"
+                alt="hires icon"
+                class="dashboard__user-icon"
+              >
+
+              <p class="dashboard__user-text">
+                <span class="bold">Hires</span>
+                0
+              </p>
+            </div>
+
+            <div class="dashboard__user-item">
+              <img
+                src="../images/icons/member.webp"
+                alt="member icon"
+                class="dashboard__user-icon"
+              >
+
+              <p class="dashboard__user-text">
+                <span class="bold">Member since</span>
+                <span id="member-since"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="dashboard__container">
           <div class="dashboard__controls">
             <h2 class="dashboard__title">My Jobs <span class="italic">(2)</span></h2>
-
-            <a href="./browse-pilots.html" class="button dashboard__button">Browse Pilots</a>
           </div>
 
           <ul class="dashboard__job-list">
@@ -96,7 +213,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/dashboard/pilot.webp"
+                      src="../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -108,7 +225,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/description.webp"
+                    src="../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -117,7 +234,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/status.webp"
+                    src="../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -126,7 +243,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/duration.webp"
+                    src="../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -135,7 +252,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/rand.webp"
+                    src="../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -149,7 +266,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/dashboard/pilot.webp"
+                      src="../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -161,7 +278,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/description.webp"
+                    src="../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -170,7 +287,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/status.webp"
+                    src="../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -179,7 +296,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/duration.webp"
+                    src="../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -188,7 +305,7 @@
 
                 <p>
                   <img
-                    src="../images/dashboard/rand.webp"
+                    src="../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -196,7 +313,223 @@
                 </p>
               </div>
             </li>
+
+            <li class="dashboard__item">
+              <div class="job">
+                <div class="job__controls">
+                  <p>
+                    <img
+                      src="../images/icons/pilot.webp"
+                      alt=""
+                      class="job__icon job__icon--small"
+                    >
+                    <span class="bold">Pilot:</span> Pilot 1
+                  </p>
+
+                  <p class="job__number">#13233631</p>
+                </div>
+
+                <p>
+                  <img
+                    src="../images/icons/description.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Description:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque alias eius cupiditate asperiores tempora molestiae totam enim numquam quas! Ex expedita suscipit et dolor molestias vel dolorem optio quam saepe!
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/status.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Status:</span> Complete
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/duration.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Hours Worked:</span> 2.5 hours
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/rand.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Total Cost:</span> R2500.00
+                </p>
+              </div>
+            </li>
+
+            <!-- <li class="dashboard__item">
+              <div class="job">
+                <div class="job__controls">
+                  <p>
+                    <img
+                      src="../images/icons/pilot.webp"
+                      alt=""
+                      class="job__icon job__icon--small"
+                    >
+                    <span class="bold">Pilot:</span> Pilot 3
+                  </p>
+
+                  <p class="job__number">#132651461</p>
+                </div>
+
+                <p>
+                  <img
+                    src="../images/icons/description.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Description:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque alias eius cupiditate asperiores tempora molestiae totam enim numquam quas! Ex expedita suscipit et dolor molestias vel dolorem optio quam saepe!
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/status.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Status:</span> Complete
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/duration.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Hours Worked:</span> 3 hours
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/rand.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Total Cost:</span> R3000.00
+                </p>
+              </div>
+            </li>
+
+            <li class="dashboard__item">
+              <div class="job">
+                <div class="job__controls">
+                  <p>
+                    <img
+                      src="../images/icons/pilot.webp"
+                      alt=""
+                      class="job__icon job__icon--small"
+                    >
+                    <span class="bold">Pilot:</span> Pilot 1
+                  </p>
+
+                  <p class="job__number">#15233631</p>
+                </div>
+
+                <p>
+                  <img
+                    src="../images/icons/description.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Description:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque alias eius cupiditate asperiores tempora molestiae totam enim numquam quas! Ex expedita suscipit et dolor molestias vel dolorem optio quam saepe!
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/status.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Status:</span> Complete
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/duration.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Hours Worked:</span> 2.5 hours
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/rand.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Total Cost:</span> R2500.00
+                </p>
+              </div>
+            </li>
+
+            <li class="dashboard__item">
+              <div class="job">
+                <div class="job__controls">
+                  <p>
+                    <img
+                      src="../images/icons/pilot.webp"
+                      alt=""
+                      class="job__icon job__icon--small"
+                    >
+                    <span class="bold">Pilot:</span> Pilot 1
+                  </p>
+
+                  <p class="job__number">#13233631</p>
+                </div>
+
+                <p>
+                  <img
+                    src="../images/icons/description.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Description:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque alias eius cupiditate asperiores tempora molestiae totam enim numquam quas! Ex expedita suscipit et dolor molestias vel dolorem optio quam saepe!
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/status.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Status:</span> Complete
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/duration.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Hours Worked:</span> 2.5 hours
+                </p>
+
+                <p>
+                  <img
+                    src="../images/icons/rand.webp"
+                    alt=""
+                    class="job__icon"
+                  >
+                  <span class="bold">Total Cost:</span> R2500.00
+                </p>
+              </div>
+            </li> -->
           </ul>
+        </div>
+
+        <div class="dashboard__paginate">
+
         </div>
       </div>
     </main>
@@ -267,5 +600,6 @@
     </footer>
 
     <script type="text/javascript" src="../scripts/dashboard.js"></script>
+    <script type="text/javascript" src="../scripts/dropdown.js"></script>
   </body>
 </html>

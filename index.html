@@ -50,17 +50,63 @@
             Sign Up
           </a>
 
-          <a
-            href="./pages/dashboard.html"
-            class="button button--white header__button"
-            id="profile"
-          >
-            View Profile
-          </a>
+          <div class="dropdown" id="dropdown">
+            <div class="dropdown__background" id="dropdown-background"></div>
+
+            <img src="./images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button">
+
+            <div class="dropdown__content" id="dropdown-content">
+              <div class="dropdown__content-top">
+                <img
+                  src="./images/no-icon.webp"
+                  alt="icon"
+                  class="image dropdown__image"
+                >
+
+                <p>Admin A.</p>
+              </div>
+
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <div>
+                    <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Account Settings</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Favourite Pilots</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Blocked Pilots</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Features</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="dropdown__content-bottom">
+                <button class="dropdown__button" id="sign-out">Sign Out</button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <img
-          src="./images/menu.webp"
+          src="./images/icons/menu.webp"
           alt="menu icon"
           class="nav__menu"
           id="menu-toggle-open"
@@ -80,7 +126,7 @@
           </div>
   
           <img
-            src="./images/close-white.webp"
+            src="./images/icons/close-white.webp"
             alt="menu icon"
             class="nav__menu"
             id="menu-toggle-close"
@@ -390,7 +436,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/pin.webp"
+                    src="./images/icons/pin.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -399,7 +445,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/rand.webp"
+                    src="./images/icons/rand.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -408,7 +454,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/rating.webp"
+                    src="./images/icons/rating.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -445,7 +491,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/pin.webp"
+                    src="./images/icons/pin.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -454,7 +500,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/rand.webp"
+                    src="./images/icons/rand.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -463,7 +509,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/rating.webp"
+                    src="./images/icons/rating.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -500,7 +546,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/pin.webp"
+                    src="./images/icons/pin.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -509,7 +555,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/rand.webp"
+                    src="./images/icons/rand.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -518,7 +564,7 @@
 
                 <div class="browse__text-row">
                   <img
-                    src="./images/pilot-page/rating.webp"
+                    src="./images/icons/rating.webp"
                     alt="pin icon"
                     class="browse__icon"
                   >
@@ -671,5 +717,6 @@
     </div>
 
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/dropdown.js"></script>
   </body>
 </html>

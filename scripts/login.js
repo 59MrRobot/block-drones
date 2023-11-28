@@ -40,7 +40,8 @@ const login = (event) => {{
           sessionStorage.setItem('user-info', JSON.stringify({
             firstName: snapshot.val().firstName,
             surname: snapshot.val().surname,
-            type: snapshot.val().type
+            type: snapshot.val().type,
+            createdAt: snapshot.val().createdAt
           }));
           sessionStorage.setItem('user-creds', JSON.stringify(credentials.user));
           sessionStorage.setItem('signedIn','true');
@@ -59,7 +60,7 @@ const login = (event) => {{
     console.log(errorMessage);
   });
 
-    FORM.reset();
+  FORM.reset();
 }}
 
 FORM.addEventListener('submit', login);
