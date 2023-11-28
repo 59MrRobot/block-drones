@@ -115,6 +115,7 @@ a {
 }
 .nav--light {
   background-color: #fff;
+  box-shadow: 10px 10px 8px rgba(112, 128, 144, 0.0941176471);
 }
 .nav--main {
   background-color: rgba(0, 0, 0, 0.4745098039);
@@ -142,6 +143,9 @@ a {
     gap: 8px;
     font-size: 0.68rem;
   }
+}
+.nav__list--end {
+  justify-content: end;
 }
 .nav__link {
   font-weight: 600;
@@ -199,6 +203,76 @@ a {
 .menu__link {
   font-weight: 600;
   color: #fff;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 8px;
+}
+.dropdown__content-top {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: rgba(52, 152, 219, 0.768627451);
+}
+.dropdown__content-bottom {
+  padding: 16px;
+}
+.dropdown__image {
+  width: 48px;
+  height: 48px;
+}
+.dropdown__image-small {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.dropdown__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown__item {
+  padding: 16px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(112, 128, 144, 0.0941176471);
+  color: rgba(52, 152, 219, 0.768627451);
+}
+.dropdown__link {
+  display: inline-block;
+  width: 100%;
+  color: #555;
+  font-size: 0.9rem;
+}
+.dropdown__button {
+  padding: 8px;
+  width: max-content;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: rgba(255, 166, 0, 0.3647058824);
+  color: #ffa500;
+  cursor: pointer;
+}
+.dropdown__background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .how-it-works {
@@ -1316,7 +1390,7 @@ a {
   }
 }
 .login-html {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .login-body {
   background-image: url("../images/backgrounds/login-background.webp");
@@ -1388,6 +1462,9 @@ a {
     height: 100vh;
   }
 }
+.signup-html {
+  overflow: hidden;
+}
 .signup-body {
   background-image: url("../images/backgrounds/login-background.webp");
   background-repeat: repeat;
@@ -1451,7 +1528,7 @@ a {
   background-color: rgba(112, 128, 144, 0.0941176471);
 }
 .dashboard-body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 .dashboard__section {
@@ -1493,7 +1570,10 @@ a {
   margin: 0 auto;
   padding: 32px 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 16px;
   height: 100%;
 }
 @media (max-width: 1024px) {
@@ -1502,8 +1582,47 @@ a {
     align-items: center;
   }
 }
+.dashboard__user-info {
+  padding: 16px 32px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 10px 10px 8px rgba(112, 128, 144, 0.0941176471);
+}
+.dashboard__user-top {
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid rgba(112, 128, 144, 0.0941176471);
+}
+.dashboard__user-image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+.dashboard__user-bottom {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard__user-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dashboard__user-icon {
+  width: 48px;
+  height: 48px;
+}
+.dashboard__user-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #555;
+}
 .dashboard__container {
-  padding: 16px;
+  padding: 16px 32px;
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
@@ -1518,14 +1637,17 @@ a {
   }
 }
 .dashboard__controls {
-  padding: 8px 0;
+  padding: 8px 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #555;
+}
+.dashboard__item {
+  display: none;
 }
 .dashboard__title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .dashboard__job-list {
@@ -1610,6 +1732,10 @@ body {
   .title {
     font-size: 1.5rem;
   }
+}
+
+.image {
+  border-radius: 50%;
 }
 
 .name {

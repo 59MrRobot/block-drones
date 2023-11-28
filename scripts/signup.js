@@ -52,6 +52,7 @@ const register = async (event) => {{
       email: email.value,
       phone: phone.value,
       type: type.value,
+      createdAt: new Date().toString(),
     });
 
     window.location.href = '../../index.html';

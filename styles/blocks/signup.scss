@@ -10,6 +10,10 @@
     height: calc(100vh);
   }
 
+  &-html {
+    overflow: hidden;
+  }
+
   &-body {
     background-image: url("../images/backgrounds/login-background.webp");
     background-repeat: repeat;

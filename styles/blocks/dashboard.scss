@@ -4,7 +4,7 @@
   background-color: $slate-grey-light;
 
   &-body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
   }
 
@@ -51,7 +51,10 @@
 
     padding: 32px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 16px;
 
     height: 100%;
 
@@ -62,8 +65,56 @@
     }
   }
 
+  &__user {
+    &-info {
+      padding: 16px 32px;
+      width: 100%;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 10px 10px 8px $slate-grey-light;
+    }
+
+    &-top {
+      padding-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid $slate-grey-light;
+    }
+
+    &-image {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+    }
+
+    &-bottom {
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+      color: $steel-grey;
+    }
+  }
+
   &__container {
-    padding: 16px;
+    padding: 16px 32px;
     width: 100%;
     border-radius: 8px;
     background-color: #fff;
@@ -79,16 +130,20 @@
   }
 
   &__controls {
-    padding: 8px 0;
+    padding: 8px 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    border-bottom: 1px solid $graphite-grey;
+    border-bottom: 1px solid $steel-grey;
+  }
+
+  &__item {
+    display: none;
   }
 
   &__title {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
   }
 
