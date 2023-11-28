@@ -37,29 +37,6 @@ window.onscroll = () => {
   }
 };
 
-const MENUTOGGLEOPEN = document.getElementById('menu-toggle-open');
-const MENUTOGGLECLOSE = document.getElementById('menu-toggle-close');
-const MENU = document.getElementById('menu');
-const MENULINKS = document.getElementsByClassName('menu__link');
-const HTML = document.getElementById('html');
-
-MENUTOGGLEOPEN.addEventListener('click', () => {
-  MENU.style.transform = 'translateY(0)';
-  HTML.style.overflowY = 'hidden';
-});
-
-MENUTOGGLECLOSE.addEventListener('click', () => {
-  MENU.style.transform = 'translateY(-100vh)';
-  HTML.style.overflowY = 'scroll';
-});
-
-for (let i = 0; i < MENULINKS.length; i++) {
-  MENULINKS[0].addEventListener('click', () => {
-    MENU.style.transform = 'translateY(-100vh)';
-    HTML.style.overflowY = 'scroll';
-  })
-}
-
 const TAB1 = document.getElementById('tab-1');
 const TAB2 = document.getElementById('tab-2');
 const TAB3 = document.getElementById('tab-3');
@@ -102,25 +79,25 @@ let userInfo = JSON.parse(sessionStorage.getItem('user-info'));
 const PROFILE = document.getElementById('profile');
 const LOGIN = document.getElementById('login-button');
 const SIGNUP = document.getElementById('signup-button');
-const LOGIN_MENU = document.getElementById('login-button-menu');
-const SIGNUP_MENU = document.getElementById('signup-button-menu');
-const PROFILE_MENU = document.getElementById('profile-menu');
+const LOGIN_MENU = document.getElementById('login-menu');
+const SIGNUP_MENU = document.getElementById('signup-menu');
 const DROPDOWN = document.getElementById('dropdown');
+const DROPDOWN_MENU = document.getElementById('dropdown-menu');
 
 if (sessionStorage.getItem('signedIn') === 'false') {
   DROPDOWN.style.display = 'none';
+  DROPDOWN_MENU.style.display = 'none';
   LOGIN.style.display = 'unset';
   SIGNUP.style.display = 'unset';
 
-  PROFILE_MENU.style.display = 'none';
   LOGIN_MENU.style.display = 'unset';
   SIGNUP_MENU.style.display = 'unset';
 } else {
   DROPDOWN.style.display = 'unset';
+  DROPDOWN_MENU.style.display = 'unset';
   LOGIN.style.display = 'none';
   SIGNUP.style.display = 'none';
 
-  PROFILE_MENU.style.display = 'unset';
   LOGIN_MENU.style.display = 'none';
   SIGNUP_MENU.style.display = 'none';
 }

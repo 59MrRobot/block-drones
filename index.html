@@ -109,9 +109,99 @@
           src="./images/icons/menu.webp"
           alt="menu icon"
           class="nav__menu"
-          id="menu-toggle-open"
+          id="menu-toggle"
         >
       </nav>
+
+      <div class="menu" id="menu">
+        <nav class="nav nav--menu">
+          <ul class="nav__list nav__list--menu">
+            <li class="nav__item">
+              <a href="#how-it-works" class="nav__link">How We Work</a>
+            </li>
+  
+            <li class="nav__item">
+              <a href="./pages/browse-pilots.html" class="nav__link">Browse Pilots</a>
+            </li>
+  
+            <li class="nav__item">
+              <a href="./pages/job-review.html" class="nav__link">Review Job</a>
+            </li>
+          </ul>
+  
+          <div class="header__container header__container--menu">
+            <a
+              href="./pages/accounts/login.html"
+              class="button button--white header__button"
+              id="login-menu"
+            >
+              Login
+            </a>
+  
+            <a
+              href="./pages/accounts/signup.html"
+              class="button button--white header__button"
+              id="signup-menu"
+            >
+              Sign Up
+            </a>
+  
+            <div class="dropdown" id="dropdown-menu">
+              <div class="dropdown__background" id="dropdown-background-menu"></div>
+  
+              <img src="./images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button-menu">
+  
+              <div class="dropdown__content" id="dropdown-content-menu">
+                <div class="dropdown__content-top">
+                  <img
+                    src="./images/no-icon.webp"
+                    alt="icon"
+                    class="image dropdown__image"
+                  >
+  
+                  <p>Admin A.</p>
+                </div>
+
+                <ul class="dropdown__list">
+                  <li class="dropdown__item">
+                    <div>
+                      <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                    </div>
+                  </li>
+  
+                  <li class="dropdown__item">
+                    <div>
+                      <p class="dropdown__link">Account Settings</p>
+                    </div>
+                  </li>
+  
+                  <li class="dropdown__item">
+                    <div>
+                      <p class="dropdown__link">Favourite Pilots</p>
+                    </div>
+                  </li>
+  
+                  <li class="dropdown__item">
+                    <div>
+                      <p class="dropdown__link">Blocked Pilots</p>
+                    </div>
+                  </li>
+  
+                  <li class="dropdown__item">
+                    <div>
+                      <p class="dropdown__link">Features</p>
+                    </div>
+                  </li>
+                </ul>
+  
+                <div class="dropdown__content-bottom">
+                  <button class="dropdown__button" id="sign-out">Sign Out</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
 
       <div class="header__content">
         <h1 class="header__title">Welcome to Block Drones</h1>
@@ -119,7 +209,7 @@
         <p class="header__subtitle">Taking Your Vision to New Heights!</p>
       </div>
 
-      <div class="menu" id="menu">
+      <!-- <div class="menu" id="menu">
         <nav class="nav nav--menu">
           <div>
             <a href="./index.html" class="logo">Block Drones</a>
@@ -166,7 +256,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </header>
 
     <main>
@@ -718,5 +808,6 @@
 
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/dropdown.js"></script>
+    <script type="text/javascript" src="scripts/menu.js"></script>
   </body>
 </html>

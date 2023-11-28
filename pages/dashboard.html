@@ -88,50 +88,83 @@
         <img
           src="../images/icons/menu-black.webp"
           alt="menu icon"
-          id="menu-toggle-open"
           class="nav__menu"
+          id="menu-toggle"
         >
       </div>
-
-      <div class="menu" id="menu">
-        <nav class="nav nav--menu">
-          <div>
-            <a href="./index.html" class="logo">Block Drones</a>
-          </div>
-  
-          <img
-            src="../images/icons/close-white.webp"
-            alt="menu icon"
-            class="nav__menu"
-            id="menu-toggle-close"
-          >
-        </nav>
-
-        <div class="menu__content">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./browse-pilots.html" class="menu__link">Browse Pilots</a>
-            </li>
-
-            <li class="menu__item">
-              <a href="./job-review.html" class="menu__link">Review Job</a>
-            </li>
-
-            <li class="menu__item">
-              <a href="./accounts/login.html" class="menu__link" id="login-button-menu">Login</a>
-            </li>
-
-            <li class="menu__item">
-              <a href="./accounts/signup.html" class="menu__link" id="signup-button-menu">Sign Up</a>
-            </li>
-
-            <li class="menu__item">
-              <p class="menu__link" id="sign-out-menu">Sign Out</p>
-            </li>
-          </ul>
-        </div>
-      </div>
     </nav>
+
+    <div class="menu" id="menu">
+      <nav class="nav nav--menu">  
+        <ul class="nav__list nav__list--menu"> 
+          <li class="nav__item">
+            <a href="./pages/browse-pilots.html" class="nav__link">Browse Pilots</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="./pages/job-review.html" class="nav__link">Review Job</a>
+          </li>
+        </ul>
+
+        <div class="header__container header__container--menu">
+          <p class="dashboard__welcome dashboard__welcome--menu" id="welcome"></p>
+
+          <div class="dropdown dropdown--menu" id="dropdown-menu">
+            <div class="dropdown__background" id="dropdown-background-menu"></div>
+
+            <img src="../images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button-menu">
+
+            <div class="dropdown__content" id="dropdown-content-menu">
+              <div class="dropdown__content-top">
+                <img
+                  src="../images/no-icon.webp"
+                  alt="icon"
+                  class="image dropdown__image"
+                >
+
+                <p>Admin A.</p>
+              </div>
+
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <div>
+                    <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Account Settings</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Favourite Pilots</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Blocked Pilots</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Features</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="dropdown__content-bottom">
+                <button class="dropdown__button" id="sign-out">Sign Out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <main class="dashboard">
       <div class="dashboard__wrapper">
@@ -614,5 +647,6 @@
 
     <script type="text/javascript" src="../scripts/dashboard.js"></script>
     <script type="text/javascript" src="../scripts/dropdown.js"></script>
+    <script type="text/javascript" src="../scripts/menu.js"></script>
   </body>
 </html>
