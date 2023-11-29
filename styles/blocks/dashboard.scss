@@ -149,6 +149,7 @@
     width: 100%;
     border-radius: 8px;
     background-color: #fff;
+    box-shadow: 10px 10px 8px $slate-grey-light;
 
     @include tablet {
       width: 80%;
