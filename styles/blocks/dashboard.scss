@@ -103,7 +103,6 @@
     &-image {
       width: 88px;
       height: 88px;
-      border-radius: 50%;
 
       @include tablet {
         width: 64px;
@@ -150,10 +149,6 @@
     width: 100%;
     border-radius: 8px;
     background-color: #fff;
-
-    overflow-y: scroll;
-    scrollbar-color: $sky-color $slate-grey-low-opacity;
-    scrollbar-width: thin;
 
     @include tablet {
       width: 80%;

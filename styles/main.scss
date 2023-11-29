@@ -42,6 +42,9 @@
 @import "./blocks/dashboard.scss";
 @import "./blocks/job.scss";
 
+//Account Settings page
+@import "./blocks/account-settings.scss";
+
 
 * {
   box-sizing: border-box;
@@ -88,7 +91,7 @@ body {
   }
 }
 
-.image {
+.profile-image {
   border-radius: 50%;
 }
 
@@ -103,6 +106,11 @@ body {
 .italic {
   font-style: italic;
   color: $steel-grey;
+}
+
+.red {
+  color: #c00000;
+  margin-left: 4px;
 }
 
 .back-to-top {
@@ -156,6 +164,11 @@ body {
   &:hover {
     background-color: $orange-accent;
     color: #fff;
+  }
+
+  &--filled {
+    color: #fff;
+    background-color: $orange-accent;
   }
 
   &--white {

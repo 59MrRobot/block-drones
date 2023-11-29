@@ -40,12 +40,17 @@ const login = (event) => {{
           sessionStorage.setItem('user-info', JSON.stringify({
             firstName: snapshot.val().firstName,
             surname: snapshot.val().surname,
+            email: snapshot.val().email,
             type: snapshot.val().type,
+            uid: snapshot.val().uid,
+            imageUrl: snapshot.val().imageUrl,
             createdAt: snapshot.val().createdAt
           }));
+
           sessionStorage.setItem('user-creds', JSON.stringify(credentials.user));
           sessionStorage.setItem('signedIn','true');
-          window.location.href = '../dashboard.html';
+
+          window.location.href = '../profile/dashboard.html';
         } else {
           console.log('No data available');
         }
