@@ -109,7 +109,7 @@ const signout = () => {
   sessionStorage.removeItem('user-creds');
   sessionStorage.removeItem('user-info');
   sessionStorage.setItem('signedIn','false');
-  window.location.href = '../../index.html';
+  window.location.href = './index.html';
 }
 
 SIGN_OUT.addEventListener('click', signout);
