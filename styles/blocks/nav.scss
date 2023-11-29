@@ -1,6 +1,7 @@
 .nav {
   padding: 24px 88px;
   width: 100%;
+  height: 92px;
 
   display: flex;
   justify-content: space-between;
@@ -10,10 +11,12 @@
 
   @include tablet {
     padding: 16px 16px;
+    height: 76px;
   }
 
   @include mobile {
     padding: 16px 8px;
+    height: 56px;
   }
 
   &--light {
@@ -48,6 +51,17 @@
       gap: 8px;
 
       font-size: 0.68rem;
+    }
+
+    &--menu {
+      @include mobile {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        // gap: 8px;
+  
+        // font-size: 0.68rem;
+      }
     }
 
     &--end {

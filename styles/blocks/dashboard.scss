@@ -27,6 +27,17 @@
 
   &__welcome {
     font-size: 0.8rem;
+
+    @include mobile {
+      display: none;
+    }
+
+    &--menu {
+      @include mobile {
+        display: unset;
+        color: #fff;
+      }
+    }
   }
 
   &__button {
@@ -59,8 +70,6 @@
     height: 100%;
 
     @include tablet {
-      padding: 0;
-
       align-items: center;
     }
   }
@@ -72,6 +81,15 @@
       border-radius: 8px;
       background-color: #fff;
       box-shadow: 10px 10px 8px $slate-grey-light;
+
+      @include tablet {
+        width: 80%;
+      }
+
+      @include mobile {
+        padding: 16px;
+        width: 90%;
+      }
     }
 
     &-top {
@@ -86,6 +104,11 @@
       width: 88px;
       height: 88px;
       border-radius: 50%;
+
+      @include tablet {
+        width: 64px;
+        height: 64px;
+      }
     }
 
     &-bottom {
@@ -103,6 +126,11 @@
     &-icon {
       width: 48px;
       height: 48px;
+
+      @include mobile {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &-text {
@@ -110,6 +138,10 @@
       flex-direction: column;
       font-size: 0.9rem;
       color: $steel-grey;
+
+      @include mobile {
+        font-size: 0.8rem;
+      }
     }
   }
 
@@ -126,6 +158,11 @@
     @include tablet {
       width: 80%;
       height: 75%;
+    }
+
+    @include mobile {
+      padding: 16px;
+      width: 90%;
     }
   }
 
@@ -157,5 +194,24 @@
     gap: 16px;
     
     list-style: none;
+  }
+
+  &__paginate {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    &-number {
+      padding: 8px 16px;
+      border: 1px solid $slate-grey;
+    }
   }
 }
