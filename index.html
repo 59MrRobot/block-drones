@@ -53,29 +53,29 @@
           <div class="dropdown" id="dropdown">
             <div class="dropdown__background" id="dropdown-background"></div>
 
-            <img src="./images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button">
+            <img src="" alt="user icon" class="profile-image dropdown__image-small" id="dropdown-button">
 
             <div class="dropdown__content" id="dropdown-content">
               <div class="dropdown__content-top">
                 <img
-                  src="./images/no-icon.webp"
+                  src=""
                   alt="icon"
-                  class="image dropdown__image"
+                  class="profile-image dropdown__image"
                 >
 
-                <p>Admin A.</p>
+                <p id="dropdown-user-name"></p>
               </div>
 
               <ul class="dropdown__list">
                 <li class="dropdown__item">
                   <div>
-                    <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                    <a href="./pages/profile/dashboard.html" class="dropdown__link">My Profile</a>
                   </div>
                 </li>
 
                 <li class="dropdown__item">
                   <div>
-                    <p class="dropdown__link">Account Settings</p>
+                    <a href="./pages/profile/account-settings.html" class="dropdown__link">Account Settings</a>
                   </div>
                 </li>
 
@@ -149,29 +149,29 @@
             <div class="dropdown" id="dropdown-menu">
               <div class="dropdown__background" id="dropdown-background-menu"></div>
   
-              <img src="./images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button-menu">
+              <img src="./images/no-icon.webp" alt="user icon" class="profile-image dropdown__image-small" id="dropdown-button-menu">
   
               <div class="dropdown__content" id="dropdown-content-menu">
                 <div class="dropdown__content-top">
                   <img
                     src="./images/no-icon.webp"
                     alt="icon"
-                    class="image dropdown__image"
+                    class="profile-image dropdown__image"
                   >
   
-                  <p>Admin A.</p>
+                  <p id="dropdown-user-name-menu"></p>
                 </div>
 
                 <ul class="dropdown__list">
                   <li class="dropdown__item">
                     <div>
-                      <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                      <a href="./pages/profile/dashboard.html" class="dropdown__link">My Profile</a>
                     </div>
                   </li>
   
                   <li class="dropdown__item">
                     <div>
-                      <p class="dropdown__link">Account Settings</p>
+                      <a href="./pages/profile/account-settings.html" class="dropdown__link">Account Settings</a>
                     </div>
                   </li>
   
@@ -195,7 +195,7 @@
                 </ul>
   
                 <div class="dropdown__content-bottom">
-                  <button class="dropdown__button" id="sign-out">Sign Out</button>
+                  <button class="dropdown__button" id="sign-out-menu">Sign Out</button>
                 </div>
               </div>
             </div>
@@ -809,5 +809,7 @@
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/dropdown.js"></script>
     <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/signout.js"></script>
+    <script type="text/javascript" src="../../scripts/profile-images.js"></script>
   </body>
 </html>

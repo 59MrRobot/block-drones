@@ -101,15 +101,3 @@ if (sessionStorage.getItem('signedIn') === 'false') {
   LOGIN_MENU.style.display = 'none';
   SIGNUP_MENU.style.display = 'none';
 }
-
-const SIGN_OUT = document.getElementById('sign-out');
-
-const signout = () => {
-  sessionStorage.removeItem('user-creds');
-  sessionStorage.removeItem('user-info');
-  sessionStorage.setItem('signedIn','false');
-  window.location.href = '../index.html';
-}
-
-SIGN_OUT.addEventListener('click', signout);
-

@@ -33,3 +33,9 @@ DROPDOWN_BACKGROUND_MENU.addEventListener('click', () => {
   DROPDOWN_CONTENT_MENU.style.display = 'none';
   DROPDOWN_BACKGROUND_MENU.style.display = 'none';
 })
+
+const DROPDOWN_USER_NAME = document.getElementById('dropdown-user-name');
+const DROPDOWN_USER_NAME_MENU = document.getElementById('dropdown-user-name-menu');
+
+DROPDOWN_USER_NAME.innerText = `${userInfo.firstName[0].toUpperCase()}${userInfo.firstName.substr(1)} ${userInfo.surname[0].toUpperCase()}.`;
+DROPDOWN_USER_NAME_MENU.innerText = `${userInfo.firstName[0].toUpperCase()}${userInfo.firstName.substr(1)} ${userInfo.surname[0].toUpperCase()}.`;

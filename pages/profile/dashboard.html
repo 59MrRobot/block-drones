@@ -6,16 +6,16 @@
     <title>Dashboard | Block Drones</title>
     <link
       rel="shortcut icon"
-      href="../images/favicon.png"
+      href="../../images/favicon.png"
       type="image/x-icon"
     >
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../../styles/main.css">
   </head>
 
   <body class="dashboard-body">
     <nav class="nav nav--light">
       <div>
-        <a href="../index.html" class="logo logo--light">Block Drones</a>
+        <a href="../../index.html" class="logo logo--light">Block Drones</a>
       </div>
 
       <div class="dashboard__section">
@@ -34,29 +34,29 @@
         <div class="dropdown" id="dropdown">
           <div class="dropdown__background" id="dropdown-background"></div>
 
-          <img src="../images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button">
+          <img src="" alt="user icon" class="profile-image dropdown__image-small" id="dropdown-button">
 
           <div class="dropdown__content" id="dropdown-content">
             <div class="dropdown__content-top">
               <img
-                src="../images/no-icon.webp"
+                src=""
                 alt="icon"
-                class="image dropdown__image"
+                class="profile-image dropdown__image"
               >
 
-              <p>Admin A.</p>
+              <p id="dropdown-user-name"></p>
             </div>
 
             <ul class="dropdown__list">
               <li class="dropdown__item">
                 <div>
-                  <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                  <a href="./dashboard.html" class="dropdown__link">My Profile</a>
                 </div>
               </li>
 
               <li class="dropdown__item">
                 <div>
-                  <p class="dropdown__link">Account Settings</p>
+                  <a href="./account-settings.html" class="dropdown__link">Account Settings</a>
                 </div>
               </li>
 
@@ -86,7 +86,7 @@
         </div>
 
         <img
-          src="../images/icons/menu-black.webp"
+          src="../../images/icons/menu-black.webp"
           alt="menu icon"
           class="nav__menu"
           id="menu-toggle"
@@ -95,46 +95,46 @@
     </nav>
 
     <div class="menu" id="menu">
-      <nav class="nav nav--menu">  
+      <nav class="nav nav--menu">
         <ul class="nav__list nav__list--menu"> 
           <li class="nav__item">
-            <a href="./pages/browse-pilots.html" class="nav__link">Browse Pilots</a>
+            <a href="../browse-pilots.html" class="nav__link">Browse Pilots</a>
           </li>
 
           <li class="nav__item">
-            <a href="./pages/job-review.html" class="nav__link">Review Job</a>
+            <a href="../job-review.html" class="nav__link">Review Job</a>
           </li>
         </ul>
 
         <div class="header__container header__container--menu">
-          <p class="dashboard__welcome dashboard__welcome--menu" id="welcome"></p>
+          <p class="account-settings__welcome account-settings__welcome--menu" id="welcome"></p>
 
           <div class="dropdown dropdown--menu" id="dropdown-menu">
             <div class="dropdown__background" id="dropdown-background-menu"></div>
 
-            <img src="../images/no-icon.webp" alt="user icon" class="image dropdown__image-small" id="dropdown-button-menu">
+            <img src="../images/no-icon.webp" alt="user icon" class="profile-image dropdown__image-small" id="dropdown-button-menu">
 
             <div class="dropdown__content" id="dropdown-content-menu">
               <div class="dropdown__content-top">
                 <img
                   src="../images/no-icon.webp"
                   alt="icon"
-                  class="image dropdown__image"
+                  class="profile-image dropdown__image"
                 >
 
-                <p>Admin A.</p>
+                <p id="dropdown-user-name-menu"></p>
               </div>
 
               <ul class="dropdown__list">
                 <li class="dropdown__item">
                   <div>
-                    <a href="./pages/dashboard.html" class="dropdown__link">My Profile</a>
+                    <a href="./dashboard.html" class="dropdown__link">My Profile</a>
                   </div>
                 </li>
 
                 <li class="dropdown__item">
                   <div>
-                    <p class="dropdown__link">Account Settings</p>
+                    <a href="./account-settings.html" class="dropdown__link">Account Settings</a>
                   </div>
                 </li>
 
@@ -158,7 +158,7 @@
               </ul>
 
               <div class="dropdown__content-bottom">
-                <button class="dropdown__button" id="sign-out">Sign Out</button>
+                <button class="dropdown__button" id="sign-out-menu">Sign Out</button>
               </div>
             </div>
           </div>
@@ -171,18 +171,18 @@
         <div class="dashboard__user-info">
           <div class="dashboard__user-top">
             <img
-              src="../images/pilot-1/icon.webp"
+              src=""
               alt="user image"
-              class="dashboard__user-image"
+              class="profile-image dashboard__user-image"
             >
 
-            <p id="user-name">Admin. A</p>
+            <p id="user-name"></p>
           </div>
 
           <div class="dashboard__user-bottom">
             <div class="dashboard__user-item">
               <img
-                src="../images/icons/rating.webp"
+                src="../../images/icons/rating.webp"
                 alt="rating icon"
                 class="dashboard__user-icon"
               >
@@ -195,7 +195,7 @@
 
             <div class="dashboard__user-item">
               <img
-                src="../images/icons/count.webp"
+                src="../../images/icons/count.webp"
                 alt="jobs icon"
                 class="dashboard__user-icon"
               >
@@ -208,7 +208,7 @@
 
             <div class="dashboard__user-item">
               <img
-                src="../images/icons/person.webp"
+                src="../../images/icons/person.webp"
                 alt="hires icon"
                 class="dashboard__user-icon"
               >
@@ -221,7 +221,7 @@
 
             <div class="dashboard__user-item">
               <img
-                src="../images/icons/member.webp"
+                src="../../images/icons/member.webp"
                 alt="member icon"
                 class="dashboard__user-icon"
               >
@@ -236,7 +236,7 @@
 
         <div class="dashboard__container">
           <div class="dashboard__controls">
-            <h2 class="dashboard__title">My Jobs <span class="italic">(2)</span></h2>
+            <h2 class="dashboard__title">My Jobs <span class="italic">(6)</span></h2>
           </div>
 
           <ul class="dashboard__job-list">
@@ -245,7 +245,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/icons/pilot.webp"
+                      src="../../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -257,7 +257,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/description.webp"
+                    src="../../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -266,7 +266,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/status.webp"
+                    src="../../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -275,7 +275,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/duration.webp"
+                    src="../../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -284,7 +284,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/rand.webp"
+                    src="../../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -298,7 +298,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/icons/pilot.webp"
+                      src="../../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -310,7 +310,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/description.webp"
+                    src="../../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -319,7 +319,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/status.webp"
+                    src="../../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -328,7 +328,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/duration.webp"
+                    src="../../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -337,7 +337,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/rand.webp"
+                    src="../../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -351,7 +351,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/icons/pilot.webp"
+                      src="../../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -363,7 +363,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/description.webp"
+                    src="../../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -372,7 +372,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/status.webp"
+                    src="../../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -381,7 +381,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/duration.webp"
+                    src="../../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -390,7 +390,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/rand.webp"
+                    src="../../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -404,7 +404,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/icons/pilot.webp"
+                      src="../../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -416,7 +416,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/description.webp"
+                    src="../../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -425,7 +425,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/status.webp"
+                    src="../../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -434,7 +434,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/duration.webp"
+                    src="../../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -443,7 +443,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/rand.webp"
+                    src="../../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -457,7 +457,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/icons/pilot.webp"
+                      src="../../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -469,7 +469,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/description.webp"
+                    src="../../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -478,7 +478,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/status.webp"
+                    src="../../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -487,7 +487,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/duration.webp"
+                    src="../../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -496,7 +496,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/rand.webp"
+                    src="../../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -510,7 +510,7 @@
                 <div class="job__controls">
                   <p>
                     <img
-                      src="../images/icons/pilot.webp"
+                      src="../../images/icons/pilot.webp"
                       alt=""
                       class="job__icon job__icon--small"
                     >
@@ -522,7 +522,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/description.webp"
+                    src="../../images/icons/description.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -531,7 +531,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/status.webp"
+                    src="../../images/icons/status.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -540,7 +540,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/duration.webp"
+                    src="../../images/icons/duration.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -549,7 +549,7 @@
 
                 <p>
                   <img
-                    src="../images/icons/rand.webp"
+                    src="../../images/icons/rand.webp"
                     alt=""
                     class="job__icon"
                   >
@@ -561,7 +561,7 @@
 
           <div class="dashboard__paginate">
             <img
-              src="../images/icons/paginate-back.webp"
+              src="../../images/icons/paginate-back.webp"
               alt="paginate back"
               class="dashboard__paginate-icon"
               id="paginate-back"
@@ -570,7 +570,7 @@
             <p class="dashboard__paginate-number" id="paginate-number"></p>
 
             <img
-              src="../images/icons/paginate-next.webp"
+              src="../../images/icons/paginate-next.webp"
               alt="paginate back"
               class="dashboard__paginate-icon"
               id="paginate-next"
@@ -583,7 +583,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__item">
-          <a href="../index.html" class="logo logo--dark footer__logo" >Block Drones</a>
+          <a href="../../index.html" class="logo logo--dark footer__logo" >Block Drones</a>
 
           <p class="footer__copyright">©2023 Block Drones, All rights reserved. </p>
         </div>
@@ -592,30 +592,30 @@
           <h3 class="footer__item-title footer__item-title--dark">Socials</h3>
 
           <div class="footer__socials">
-            <a href="../index.html">
+            <a href="../../index.html">
               <img
-                src="../images/footer/linkedin-white.webp"
+                src="../../images/footer/linkedin-white.webp"
                 alt="linkedin icon"
                 class="footer__socials-icon"
               >
             </a>
-            <a href="../index.html">
+            <a href="../../index.html">
               <img
-                src="../images/footer/instagram-white.webp"
+                src="../../images/footer/instagram-white.webp"
                 alt="instagram icon"
                 class="footer__socials-icon"
               >
             </a>
-            <a href="../index.html">
+            <a href="../../index.html">
               <img
-                src="../images/footer/pinterest-white.webp"
+                src="../../images/footer/pinterest-white.webp"
                 alt="pinterest icon"
                 class="footer__socials-icon"
               >
             </a>
-            <a href="../index.html">
+            <a href="../../index.html">
               <img
-                src="../images/footer/facebook-white.webp"
+                src="../../images/footer/facebook-white.webp"
                 alt="facebook icon"
                 class="footer__socials-icon"
               >
@@ -645,8 +645,10 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="../scripts/dashboard.js"></script>
-    <script type="text/javascript" src="../scripts/dropdown.js"></script>
-    <script type="text/javascript" src="../scripts/menu.js"></script>
+    <script type="text/javascript" src="../../scripts/dashboard.js"></script>
+    <script type="text/javascript" src="../../scripts/dropdown.js"></script>
+    <script type="text/javascript" src="../../scripts/menu.js"></script>
+    <script type="text/javascript" src="../../scripts/signout.js"></script>
+    <script type="text/javascript" src="../../scripts/profile-images.js"></script>
   </body>
 </html>

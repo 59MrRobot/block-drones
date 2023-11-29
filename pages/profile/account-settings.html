@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings | Block Drones</title>
+    <link
+      rel="shortcut icon"
+      href="../../images/favicon.png"
+      type="image/x-icon"
+    >
+    <link rel="stylesheet" href="../../styles/main.css">
+  </head>
+
+  <body class="account-settings-body">
+    <nav class="nav nav--light">
+      <div>
+        <a href="../../index.html" class="logo logo--light">Block Drones</a>
+      </div>
+
+      <div class="account-settings__section">
+        <ul class="nav__list account-settings__list">
+          <li class="nav__item">
+            <a href="./browse-pilots.html" class="nav__link nav__link--light">Browse Pilots</a>
+          </li>
+  
+          <li class="nav__item">
+            <a href="./job-review.html" class="nav__link nav__link--light">Review Job</a>
+          </li>
+        </ul>
+
+        <p class="account-settings__welcome" id="welcome"></p>
+
+        <div class="dropdown" id="dropdown">
+          <div class="dropdown__background" id="dropdown-background"></div>
+
+          <img src="" alt="user icon" class="profile-image dropdown__image-small" id="dropdown-button">
+
+          <div class="dropdown__content" id="dropdown-content">
+            <div class="dropdown__content-top">
+              <img
+                src=""
+                alt="icon"
+                class="profile-image dropdown__image"
+              >
+
+              <p id="dropdown-user-name"></p>
+            </div>
+
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <div>
+                  <a href="./dashboard.html" class="dropdown__link">My Profile</a>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <a href="./account-settings.html" class="dropdown__link">Account Settings</a>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <p class="dropdown__link">Favourite Pilots</p>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <p class="dropdown__link">Blocked Pilots</p>
+                </div>
+              </li>
+
+              <li class="dropdown__item">
+                <div>
+                  <p class="dropdown__link">Features</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="dropdown__content-bottom">
+              <button class="dropdown__button" id="sign-out">Sign Out</button>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="../../images/icons/menu-black.webp"
+          alt="menu icon"
+          class="nav__menu"
+          id="menu-toggle"
+        >
+      </div>
+    </nav>
+
+    <div class="menu" id="menu">
+      <nav class="nav nav--menu">  
+        <ul class="nav__list nav__list--menu"> 
+          <li class="nav__item">
+            <a href="../browse-pilots.html" class="nav__link">Browse Pilots</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="../job-review.html" class="nav__link">Review Job</a>
+          </li>
+        </ul>
+
+        <div class="header__container header__container--menu">
+          <p class="account-settings__welcome account-settings__welcome--menu" id="welcome"></p>
+
+          <div class="dropdown dropdown--menu" id="dropdown-menu">
+            <div class="dropdown__background" id="dropdown-background-menu"></div>
+
+            <img src="../images/no-icon.webp" alt="user icon" class="profile-image dropdown__image-small" id="dropdown-button-menu">
+
+            <div class="dropdown__content" id="dropdown-content-menu">
+              <div class="dropdown__content-top">
+                <img
+                  src="../images/no-icon.webp"
+                  alt="icon"
+                  class="profile-image dropdown__image"
+                >
+
+                <p id="dropdown-user-name-menu"></p>
+              </div>
+
+              <ul class="dropdown__list">
+                <li class="dropdown__item">
+                  <div>
+                    <a href="./dashboard.html" class="dropdown__link">My Profile</a>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <a href="./account-settings.html" class="dropdown__link">Account Settings</a>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Favourite Pilots</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Blocked Pilots</p>
+                  </div>
+                </li>
+
+                <li class="dropdown__item">
+                  <div>
+                    <p class="dropdown__link">Features</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="dropdown__content-bottom">
+                <button class="dropdown__button" id="sign-out-menu">Sign Out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <main class="account-settings">
+      <div class="account-settings__wrapper">
+        <div class="account-settings__container">
+          <h2 class="account-settings__title">Profile Info:</h2>
+
+          <form class="account-settings__form">
+            <div class="account-settings__form-field">
+              <label for="first-name" class="account-settings__form-label">First Name <span class="red">*</span></label>
+
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                class="account-settings__form-input"
+              >
+            </div>
+  
+            <div class="account-settings__form-field">
+              <label for="last-name" class="account-settings__form-label">Last Name <span class="red">*</span></label>
+
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                class="account-settings__form-input"
+              >
+            </div>
+  
+            <div class="account-settings__form-field">
+              <label for="email" class="account-settings__form-label">Email <span class="red">*</span></label>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="account-settings__form-input"
+              >
+            </div>
+  
+            <div class="account-settings__form-field">
+              <label for="profile-image" class="account-settings__form-label">Update your profile photo:</label>
+              
+              <div class="account-settings__form-avatar">
+                <img
+                  src=""
+                  alt="user image"
+                  id="account-image"
+                  class="profile-image account-settings__image"
+                >
+                
+                <div class="account-settings__form-field">
+                  <label for="profile-image" class="account-settings__form-label account-settings__form-label--small">Change:</label>
+
+                  <input
+                    type="file"
+                    id="avatar"
+                    name="avatar"
+                    accept="image/png, image/jpeg"
+                    class="account-setting__avatar"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="account-settings__form-field">
+              <p class="account-settings__form-title">Notifications</p>
+
+              <label for="general-updates" class="account-settings__form-label">
+                <input
+                  type="checkbox"
+                  name="general-updates"
+                  id="general-updates"
+                  class="account-settings__form-checkbox"
+                >
+                Subscribe to general updates
+              </label>
+              <p class="account-settings__form-subscript">Get product updates & general news</p>
+
+              <label for="feature-updates" class="account-settings__form-label">
+                <input
+                  type="checkbox"
+                  name="feature-updates"
+                  id="feature-updates"
+                  class="account-settings__form-checkbox"
+                >
+                Subscribe to feature updates
+              </label>
+              <p class="account-settings__form-subscript">Get feature updates</p>
+            </div>
+
+            <div class="account-settings__form-field">
+              <p class="account-settings__form-title">Payment Method</p>
+
+              <button class="account-settings__button">Add a card</button>
+            </div>
+          </form>
+
+          <div class="account-settings__bottom">
+            <button class="account-settings__button">Save</button>
+            <button class="account-settings__button account-settings__button--outlined">Change password</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__item">
+          <a href="../../index.html" class="logo logo--dark footer__logo" >Block Drones</a>
+
+          <p class="footer__copyright">©2023 Block Drones, All rights reserved. </p>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title footer__item-title--dark">Socials</h3>
+
+          <div class="footer__socials">
+            <a href="../../index.html">
+              <img
+                src="../../images/footer/linkedin-white.webp"
+                alt="linkedin icon"
+                class="footer__socials-icon"
+              >
+            </a>
+            <a href="../../index.html">
+              <img
+                src="../../images/footer/instagram-white.webp"
+                alt="instagram icon"
+                class="footer__socials-icon"
+              >
+            </a>
+            <a href="../../index.html">
+              <img
+                src="../../images/footer/pinterest-white.webp"
+                alt="pinterest icon"
+                class="footer__socials-icon"
+              >
+            </a>
+            <a href="../../index.html">
+              <img
+                src="../../images/footer/facebook-white.webp"
+                alt="facebook icon"
+                class="footer__socials-icon"
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title">Our Services</h3>
+
+          <ul class="footer__list">
+            <li>Aerial Photography and Videography</li>
+            <li>Filmmaking and Cinematography</li>
+            <li>Event Coverage</li>
+            <li>Real Estate Marketing</li>
+            <li>Custom Services</li>
+          </ul>
+        </div>
+
+        <div class="footer__item">
+          <h3 class="footer__item-title">About Us</h3>
+
+          <p>
+            We're your trusted source for connecting with skilled drone pilots. Our mission is to make aerial services accessible, convenient, and reliable. Explore our network of expert aviators and elevate your projects with confidence.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../../scripts/account-settings.js"></script>
+    <script type="text/javascript" src="../../scripts/dropdown.js"></script>
+    <script type="text/javascript" src="../../scripts/menu.js"></script>
+    <script type="text/javascript" src="../../scripts/signout.js"></script>
+    <script type="text/javascript" src="../../scripts/profile-images.js"></script>
+  </body>
+</html>
