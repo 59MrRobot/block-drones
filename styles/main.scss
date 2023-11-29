@@ -41,9 +41,16 @@
 //Dashboard page
 @import "./blocks/dashboard.scss";
 @import "./blocks/job.scss";
+@import "./blocks/paginate.scss";
 
 //Account Settings page
 @import "./blocks/account-settings.scss";
+
+//Favourites page
+@import "./blocks/favourites.scss";
+
+//Blocked page
+@import "./blocks/blocked.scss";
 
 
 * {

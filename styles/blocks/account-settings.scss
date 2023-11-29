@@ -8,36 +8,9 @@
     width: 100vw;
   }
 
-  &__section {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 8px;
-    width: 75%;
-
-    @include tablet {
-      width: 50%;
-    }
-  }
-
   &__list {
     width: max-content;
     margin: 0 16px 0 0;
-  }
-
-  &__welcome {
-    font-size: 0.8rem;
-
-    @include mobile {
-      display: none;
-    }
-
-    &--menu {
-      @include mobile {
-        display: unset;
-        color: #fff;
-      }
-    }
   }
 
   &__wrapper {
@@ -66,6 +39,7 @@
 
     border-radius: 8px;
     background-color: #fff;
+    box-shadow: 10px 10px 8px $slate-grey-light;
 
     @include tablet {
       width: 80%;
