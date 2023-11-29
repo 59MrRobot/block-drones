@@ -52,7 +52,7 @@ const register = async (event) => {{
       email: email.value,
       phone: phone.value,
       type: type.value,
-      imageUrl: "https://firebasestorage.googleapis.com/v0/b/block-drones.appspot.com/o/no-icon.webp?alt=media&token=ead89e36-023a-4994-83e1-aaa17d0b8a9e",
+      imageUrl: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
       createdAt: new Date().toString(),
     });
 
