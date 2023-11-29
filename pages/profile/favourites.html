@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" id="html">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Settings | Block Drones</title>
+    <title>Favourite Pilots | Block Drones</title>
     <link
       rel="shortcut icon"
       href="../../images/favicon.png"
@@ -11,8 +11,7 @@
     >
     <link rel="stylesheet" href="../../styles/main.css">
   </head>
-
-  <body class="account-settings-body">
+  <body class="favourites-body">
     <nav class="nav nav--light">
       <div>
         <a href="../../index.html" class="logo logo--light">Block Drones</a>
@@ -166,106 +165,137 @@
       </nav>
     </div>
 
-    <main class="account-settings">
-      <div class="account-settings__wrapper">
-        <div class="account-settings__container">
-          <h2 class="account-settings__title">Profile Info:</h2>
+    <main class="favourites">
+      <div class="favourites__wrapper">
+        <div class="favourites__container">
+          <h2 class="favourites__title">Favourite Pilots:</h2>
 
-          <form class="account-settings__form">
-            <div class="account-settings__form-field">
-              <label for="first-name" class="account-settings__form-label">First Name <span class="red">*</span></label>
+          <ul class="favourites__list">
+            <li class="favourites__item">
+              <div class="favourites__item-container">
+                <div class="favourites__item-info">
+                  <p class="favourites__item-number">1</p>
 
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                class="account-settings__form-input"
-              >
-            </div>
-  
-            <div class="account-settings__form-field">
-              <label for="last-name" class="account-settings__form-label">Last Name <span class="red">*</span></label>
+                  <img
+                    src="../../images/pilot-1/icon.webp"
+                    alt="pilot icon"
+                    class="profile-image favourites__item-image"
+                    >
 
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                class="account-settings__form-input"
-              >
-            </div>
-  
-            <div class="account-settings__form-field">
-              <label for="email" class="account-settings__form-label">Email <span class="red">*</span></label>
-
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="account-settings__form-input"
-              >
-            </div>
-  
-            <div class="account-settings__form-field">
-              <label for="profile-image" class="account-settings__form-label">Update your profile photo:</label>
-              
-              <div class="account-settings__form-avatar">
-                <img
-                  src=""
-                  alt="user image"
-                  id="account-image"
-                  class="profile-image account-settings__image"
-                >
-                
-                <div class="account-settings__form-field">
-                  <label for="profile-image" class="account-settings__form-label account-settings__form-label--small">Change:</label>
-
-                  <input
-                    type="file"
-                    id="avatar"
-                    name="avatar"
-                    accept="image/png, image/jpeg"
-                    class="account-setting__avatar"
-                  />
+                  <h3 class="favourites__item-name">Pilot 1</h3>
                 </div>
+
+                <a href="../pilots/pilot-1.html" class="favourites__item-button">View</a>
               </div>
-            </div>
+            </li>
 
-            <div class="account-settings__form-field">
-              <p class="account-settings__form-title">Notifications</p>
+            <li class="favourites__item">
+              <div class="favourites__item-container">
+                <div class="favourites__item-info">
+                  <p class="favourites__item-number">2</p>
 
-              <label for="general-updates" class="account-settings__form-label">
-                <input
-                  type="checkbox"
-                  name="general-updates"
-                  id="general-updates"
-                  class="account-settings__form-checkbox"
-                >
-                Subscribe to general updates
-              </label>
-              <p class="account-settings__form-subscript">Get product updates & general news</p>
+                  <img
+                    src="../../images/pilot-2/icon.webp"
+                    alt="pilot icon"
+                    class="profile-image favourites__item-image"
+                    >
 
-              <label for="feature-updates" class="account-settings__form-label">
-                <input
-                  type="checkbox"
-                  name="feature-updates"
-                  id="feature-updates"
-                  class="account-settings__form-checkbox"
-                >
-                Subscribe to feature updates
-              </label>
-              <p class="account-settings__form-subscript">Get feature updates</p>
-            </div>
+                  <h3 class="favourites__item-name">Pilot 2</h3>
+                </div>
 
-            <div class="account-settings__form-field">
-              <p class="account-settings__form-title">Payment Method</p>
+                <a href="../pilots/pilot-2.html" class="favourites__item-button">View</a>
+              </div>
+            </li>
 
-              <button class="account-settings__button">Add a card</button>
-            </div>
-          </form>
+            <li class="favourites__item">
+              <div class="favourites__item-container">
+                <div class="favourites__item-info">
+                  <p class="favourites__item-number">3</p>
 
-          <div class="account-settings__bottom">
-            <button class="account-settings__button">Save</button>
-            <button class="account-settings__button account-settings__button--outlined">Change password</button>
+                  <img
+                    src="../../images/pilot-3/icon.webp"
+                    alt="pilot icon"
+                    class="profile-image favourites__item-image"
+                    >
+
+                  <h3 class="favourites__item-name">Pilot 3</h3>
+                </div>
+
+                <a href="../pilots/pilot-3.html" class="favourites__item-button">View</a>
+              </div>
+            </li>
+
+            <li class="favourites__item">
+              <div class="favourites__item-container">
+                <div class="favourites__item-info">
+                  <p class="favourites__item-number">4</p>
+
+                  <img
+                    src="../../images/pilot-4/icon.webp"
+                    alt="pilot icon"
+                    class="profile-image favourites__item-image"
+                    >
+
+                  <h3 class="favourites__item-name">Pilot 4</h3>
+                </div>
+
+                <a href="../pilots/pilot-4.html" class="favourites__item-button">View</a>
+              </div>
+            </li>
+
+            <li class="favourites__item">
+              <div class="favourites__item-container">
+                <div class="favourites__item-info">
+                  <p class="favourites__item-number">5</p>
+
+                  <img
+                    src="../../images/pilot-5/icon.webp"
+                    alt="pilot icon"
+                    class="profile-image favourites__item-image"
+                    >
+
+                  <h3 class="favourites__item-name">Pilot 5</h3>
+                </div>
+
+                <a href="../pilots/pilot-5.html" class="favourites__item-button">View</a>
+              </div>
+            </li>
+
+            <li class="favourites__item">
+              <div class="favourites__item-container">
+                <div class="favourites__item-info">
+                  <p class="favourites__item-number">6</p>
+
+                  <img
+                    src="../../images/pilot-4/icon.webp"
+                    alt="pilot icon"
+                    class="profile-image favourites__item-image"
+                    >
+
+                  <h3 class="favourites__item-name">Pilot 4</h3>
+                </div>
+
+                <a href="../pilots/pilot-4.html" class="favourites__item-button">View</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="paginate">
+            <img
+              src="../../images/icons/paginate-back.webp"
+              alt="paginate back"
+              class="paginate-icon"
+              id="paginate-back"
+            >
+            
+            <p class="paginate-number" id="paginate-number"></p>
+
+            <img
+              src="../../images/icons/paginate-next.webp"
+              alt="paginate back"
+              class="paginate-icon"
+              id="paginate-next"
+            >
           </div>
         </div>
       </div>
@@ -336,10 +366,10 @@
       </div>
     </footer>
 
-    <script type="text/javascript" src="../../scripts/account-settings.js"></script>
+    <script type="text/javascript" src="../../scripts/favourites.js"></script>
     <script type="text/javascript" src="../../scripts/dropdown.js"></script>
     <script type="text/javascript" src="../../scripts/menu.js"></script>
     <script type="text/javascript" src="../../scripts/signout.js"></script>
-    <script type="text/javascript" src="../../scripts/profile-images.js"></script>
+    <script type="text/javascript" src="../../scripts/profile-images.js"></script>script>
   </body>
 </html>
